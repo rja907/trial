@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" />
+        <meta http-equiv="Content-Type" content="application/xml+xhtml; charset=UTF-8"/>
+        <title>Vivid Value Vulture</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-189761194-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-189761194-1');
+        </script>
+        <style>
+            .card-header .fa {
+              transition: .3s transform ease-in-out;
+            }
+            .card-header .collapsed .fa {
+              transform: rotate(-90deg);
+            }
+            img {
+                float:right;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-light">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Vivid Value Vulture</a>
+            </li>
+          </ul>
+          <ul class="nav justify-content-center flex-xs-column">
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" href="https://twitter.com/vvvninja"><img src="twitter.svg" width="30" height="30" data-toggle="tooltip" data-placement="bottom" title="Twitter"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  target="_blank" href="https://www.instagram.com/vvvninja/"><img src="instagram-2016.svg" width="30" height="30" data-toggle="tooltip" data-placement="bottom" title="Instagram"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="em.html"><img src="em.jpg" width="30" height="30" data-toggle="tooltip" data-placement="bottom" title="Everything Money"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tooltip" data-placement="bottom" href="brk.html" title="A look into Warren Buffet's Portfolio.">Buffet's Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Ask me anything!" href="https://www.patreon.com/vvvninja">AMA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="A look into the research for Earnings week!" href="earnings.html">Earnings week</a>
+            </li>
+          </ul>
+        </nav>
+        <p class="mx-5">Last updated: Feb 24, 2021.</p>
+        <a class="mx-5" href="https://www.youtube.com/channel/UChBVf9YnourrEDTsbbwJPRA" target="_blank" title="Everything Money Youtube channel!">Everything Money Youtube Channel! <- Great channel to learn about fundamentals!!</a>
+        <div class="card-deck mx-5 my-4">
+            <div class="card text-white bg-primary p-5">
+              <div class="card-body">
+                <h5 class="card-title">Neutral</h5>
+                <p class="card-text">Blue cards mean that this is not a negative or a positive feature. It is useful data related to the stock.</p>
+              </div>
+            </div>
+            <div class="card text-white bg-success p-5">
+              <div class="card-body">
+                <h5 class="card-title">Positive</h5>
+                <p class="card-text">Green cards mean that the value passes a basic benchmark/historical average checks.</p>
+              </div>
+            </div>
+            <div class="card text-white bg-danger p-5">
+              <div class="card-body">
+                <h5 class="card-title">Negative</h5>
+                <p class="card-text">Red cards mean that the value fails a basic benchmark/historical average checks.</p>
+              </div>
+            </div>
+        </div>
+        <div id="accordion" class="mx-5" role="tablist">
+
+                <div class="card">
+                <h5 class="card-header text-center">
+                    <a data-toggle="collapse" href="#collapse-FUBO" class="collapsed d-block">
+                        <i class="fa fa-chevron-down pull-right"></i>
+                        FUBO
+                    </a>
+                </h5>
+                <div id="collapse-FUBO" class="collapse">
+                    <div class="row justify-content-around card-body">
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Company Name</h5>
+                                <p class="card-text align-self-end font-weight-bold">fuboTV Inc</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-danger mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">PE Ratio</h5>
+                                <p class="card-text align-self-end font-weight-bold"></p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Latest Price</h5>
+                                <p class="card-text align-self-end font-weight-bold">$38.93</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Market Capitalization</h5>
+                                <p class="card-text align-self-end font-weight-bold">$2,630,220,738</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Profit Margin</h5>
+                                <p class="card-text align-self-end font-weight-bold">NA</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Revenue Growth (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">NA</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Profit Growth (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">NA</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Shares Outstanding (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">NA</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-danger mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Net Working Capital</h5>
+                                <p class="card-text align-self-end font-weight-bold">2019-12</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">FCF Growth (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">NA</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">FCF Average over last 5 years</h5>
+                                <p class="card-text align-self-end font-weight-bold">$-1,000,000.0</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">FCF Multiple</h5>
+                                <p class="card-text align-self-end font-weight-bold">-2630.22x FCF!</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-danger mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Total Checks</h5>
+                                <p class="card-text align-self-end font-weight-bold">1 &check;s out of 3 (33.0%)</p>
+                              </div>
+                            </div>
+
+                    </div>
+                </div>
+                </div>
+                <br/>
+
+                <div class="card">
+                <h5 class="card-header text-center">
+                    <a data-toggle="collapse" href="#collapse-BB" class="collapsed d-block">
+                        <i class="fa fa-chevron-down pull-right"></i>
+                        BB
+                    </a>
+                </h5>
+                <div id="collapse-BB" class="collapse">
+                    <div class="row justify-content-around card-body">
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Company Name</h5>
+                                <p class="card-text align-self-end font-weight-bold">BlackBerry Ltd</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-danger mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">PE Ratio</h5>
+                                <p class="card-text align-self-end font-weight-bold"></p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Latest Price</h5>
+                                <p class="card-text align-self-end font-weight-bold">$10.4</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Market Capitalization</h5>
+                                <p class="card-text align-self-end font-weight-bold">$5,865,268,011</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Profit Margin</h5>
+                                <p class="card-text align-self-end font-weight-bold">72.8%</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-danger mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Revenue Growth (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">$2,160 -> $1,309 -> $932 -> $904 -> $1,040 -> $965</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Profit Growth (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">$-208 -> $-1,206 -> $405 -> $93 -> $-152 -> $-830</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Shares Outstanding (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">651 -> 525 -> 546 -> 616 -> 614 -> 574</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Net Working Capital</h5>
+                                <p class="card-text align-self-end font-weight-bold">2020-02</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-danger mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">FCF Growth (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">$155 -> $-293 -> $659 -> $51 -> $-18 -> $25</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">FCF Average over last 5 years</h5>
+                                <p class="card-text align-self-end font-weight-bold">$110,800,000.0</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-danger mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">FCF Multiple</h5>
+                                <p class="card-text align-self-end font-weight-bold">52.94x FCF!</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-danger mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Total Checks</h5>
+                                <p class="card-text align-self-end font-weight-bold">4 &check;s out of 8 (50.0%)</p>
+                              </div>
+                            </div>
+
+                    </div>
+                </div>
+                </div>
+                <br/>
+
+                <div class="card">
+                <h5 class="card-header text-center">
+                    <a data-toggle="collapse" href="#collapse-TXN" class="collapsed d-block">
+                        <i class="fa fa-chevron-down pull-right"></i>
+                        TXN
+                    </a>
+                </h5>
+                <div id="collapse-TXN" class="collapse">
+                    <div class="row justify-content-around card-body">
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Company Name</h5>
+                                <p class="card-text align-self-end font-weight-bold">Texas Instruments Inc.</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-danger mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">PE Ratio</h5>
+                                <p class="card-text align-self-end font-weight-bold">28.57</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Dividend Rate</h5>
+                                <p class="card-text align-self-end font-weight-bold">2.2%</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Latest Price</h5>
+                                <p class="card-text align-self-end font-weight-bold">$172.85</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Market Capitalization</h5>
+                                <p class="card-text align-self-end font-weight-bold">$159,063,344,164</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Minimum FCF needed to support current Dividend</h5>
+                                <p class="card-text align-self-end font-weight-bold">$6,051,038,219.7</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Profit Margin</h5>
+                                <p class="card-text align-self-end font-weight-bold">64.1%</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Revenue Growth (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">$13,370 -> $14,961 -> $15,784 -> $14,383 -> $14,461 -> $14,461</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Profit Growth (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">$3,595 -> $3,682 -> $5,580 -> $5,017 -> $5,595 -> $5,595</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Shares Outstanding (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">1,021 -> 1,012 -> 990 -> 952 -> 933 -> 933</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Net Working Capital</h5>
+                                <p class="card-text align-self-end font-weight-bold">2020-12</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">FCF Growth (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">$4,083 -> $4,668 -> $6,058 -> $5,802 -> $5,490 -> $5,490</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">FCF Average over last 5 years</h5>
+                                <p class="card-text align-self-end font-weight-bold">$5,220,200,000.0</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Dividend Support</h5>
+                                <p class="card-text align-self-end font-weight-bold">Average FCF of $5,220,200,000.0 can support current dividend of: $6,051,038,219.7</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-danger mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">FCF Multiple</h5>
+                                <p class="card-text align-self-end font-weight-bold">30.47x FCF!</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Total Checks</h5>
+                                <p class="card-text align-self-end font-weight-bold">7 &check;s out of 9 (78.0%)</p>
+                              </div>
+                            </div>
+
+                    </div>
+                </div>
+                </div>
+                <br/>
+
+                <div class="card">
+                <h5 class="card-header text-center">
+                    <a data-toggle="collapse" href="#collapse-AMCX" class="collapsed d-block">
+                        <i class="fa fa-chevron-down pull-right"></i>
+                        AMCX
+                    </a>
+                </h5>
+                <div id="collapse-AMCX" class="collapse">
+                    <div class="row justify-content-around card-body">
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Company Name</h5>
+                                <p class="card-text align-self-end font-weight-bold">AMC Networks Inc</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">PE Ratio</h5>
+                                <p class="card-text align-self-end font-weight-bold">11.3</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Latest Price</h5>
+                                <p class="card-text align-self-end font-weight-bold">$51.92</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Market Capitalization</h5>
+                                <p class="card-text align-self-end font-weight-bold">$1,544,868,178</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Profit Margin</h5>
+                                <p class="card-text align-self-end font-weight-bold">50.8%</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Revenue Growth (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">$2,581 -> $2,756 -> $2,806 -> $2,972 -> $3,060 -> $2,820</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Profit Growth (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">$367 -> $271 -> $471 -> $446 -> $380 -> $137</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Shares Outstanding (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">73 -> 72 -> 66 -> 59 -> 57 -> 55</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Net Working Capital</h5>
+                                <p class="card-text align-self-end font-weight-bold">2019-12</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">FCF Growth (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">$302 -> $435 -> $306 -> $517 -> $392 -> $670</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">FCF Average over last 5 years</h5>
+                                <p class="card-text align-self-end font-weight-bold">$390,400,000.0</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">FCF Multiple</h5>
+                                <p class="card-text align-self-end font-weight-bold">3.96x FCF!</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Total Checks</h5>
+                                <p class="card-text align-self-end font-weight-bold">8 &check;s out of 8 (100.0%)</p>
+                              </div>
+                            </div>
+
+                    </div>
+                </div>
+                </div>
+                <br/>
+
+                <div class="card">
+                <h5 class="card-header text-center">
+                    <a data-toggle="collapse" href="#collapse-CCL" class="collapsed d-block">
+                        <i class="fa fa-chevron-down pull-right"></i>
+                        CCL
+                    </a>
+                </h5>
+                <div id="collapse-CCL" class="collapse">
+                    <div class="row justify-content-around card-body">
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Company Name</h5>
+                                <p class="card-text align-self-end font-weight-bold">Carnival Corp.</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-danger mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">PE Ratio</h5>
+                                <p class="card-text align-self-end font-weight-bold"></p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Latest Price</h5>
+                                <p class="card-text align-self-end font-weight-bold">$26.46</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Market Capitalization</h5>
+                                <p class="card-text align-self-end font-weight-bold">$29,211,575,823</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-danger mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Profit Margin</h5>
+                                <p class="card-text align-self-end font-weight-bold">-47.4%</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-danger mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Revenue Growth (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">$16,389 -> $17,510 -> $18,881 -> $20,825 -> $5,594 -> $5,594</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-danger mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Profit Growth (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">$2,779 -> $2,606 -> $3,152 -> $2,990 -> $-10,236 -> $-10,236</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-danger mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Shares Outstanding (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">747 -> 725 -> 710 -> 692 -> 775 -> 775</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Net Working Capital</h5>
+                                <p class="card-text align-self-end font-weight-bold">2020-11</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-danger mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">FCF Growth (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">$2,072 -> $2,378 -> $1,800 -> $46 -> $-9,921 -> $-9,921</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">FCF Average over last 5 years</h5>
+                                <p class="card-text align-self-end font-weight-bold">$-725,000,000.0</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">FCF Multiple</h5>
+                                <p class="card-text align-self-end font-weight-bold">-40.29x FCF!</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-danger mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Total Checks</h5>
+                                <p class="card-text align-self-end font-weight-bold">2 &check;s out of 8 (25.0%)</p>
+                              </div>
+                            </div>
+
+                    </div>
+                </div>
+                </div>
+                <br/>
+
+                <div class="card">
+                <h5 class="card-header text-center">
+                    <a data-toggle="collapse" href="#collapse-AOS" class="collapsed d-block">
+                        <i class="fa fa-chevron-down pull-right"></i>
+                        AOS
+                    </a>
+                </h5>
+                <div id="collapse-AOS" class="collapse">
+                    <div class="row justify-content-around card-body">
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Company Name</h5>
+                                <p class="card-text align-self-end font-weight-bold">A.O. Smith Corp.</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-danger mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">PE Ratio</h5>
+                                <p class="card-text align-self-end font-weight-bold">28.91</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Dividend Rate</h5>
+                                <p class="card-text align-self-end font-weight-bold">1.61%</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Latest Price</h5>
+                                <p class="card-text align-self-end font-weight-bold">$61.76</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Market Capitalization</h5>
+                                <p class="card-text align-self-end font-weight-bold">$9,971,893,120</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Minimum FCF needed to support current Dividend</h5>
+                                <p class="card-text align-self-end font-weight-bold">$99,010,910.9</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Profit Margin</h5>
+                                <p class="card-text align-self-end font-weight-bold">38.3%</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Revenue Growth (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">$2,686 -> $2,996 -> $3,188 -> $2,992 -> $2,895 -> $2,895</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Profit Growth (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">$327 -> $297 -> $444 -> $370 -> $344 -> $344</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Shares Outstanding (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">177 -> 175 -> 172 -> 167 -> 163 -> 163</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Net Working Capital</h5>
+                                <p class="card-text align-self-end font-weight-bold">2020-12</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">FCF Growth (in Millions)</h5>
+                                <p class="card-text align-self-end font-weight-bold">$365 -> $232 -> $363 -> $392 -> $505 -> $505</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-primary mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">FCF Average over last 5 years</h5>
+                                <p class="card-text align-self-end font-weight-bold">$371,400,000.0</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Dividend Support</h5>
+                                <p class="card-text align-self-end font-weight-bold">Average FCF of $371,400,000.0 can support current dividend of: $99,010,910.9</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-danger mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">FCF Multiple</h5>
+                                <p class="card-text align-self-end font-weight-bold">26.85x FCF!</p>
+                              </div>
+                            </div>
+
+                            <div class="card col-md-5 col-sm-10 col-xs-10 text-center text-white bg-success mb-3">
+                              <div class="card-body">
+                                <h5 class="card-title">Total Checks</h5>
+                                <p class="card-text align-self-end font-weight-bold">7 &check;s out of 9 (78.0%)</p>
+                              </div>
+                            </div>
+
+                    </div>
+                </div>
+                </div>
+                <br/>
+
+        </div>
+        <div class="container mt-100 mx-auto" style="width:350px;">
+            <iframe src="https://righttothepoint.substack.com/embed" width="350" height="350" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+        </div>
+        <div class="alert mx-5 alert-success" role="alert">
+          <h5 class="alert-heading"> All the best out there! 🚀🚀🚀🚀</h5>
+          <hr>
+          <p class="mb-0">This is not investment advice. Please do your due diligence and don't listen to people promoting stonks!</p>
+        </div>
+    </body>
+</html>
